@@ -1,0 +1,52 @@
+.button {
+  align-items: center;
+  background-color: var(--accent-11);
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: var(--accent-1);
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-weight: 400;
+  gap: 10px;
+  justify-content: center;
+  margin: unset;
+  padding: 13px;
+  transition: 0.4s;
+  width: fit-content;
+}
+.button:hover {
+  background-color: var(--accent-8);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isWide {
+  width: 100%;
+}
+
+.isBold {
+  font-weight: 600;
+}
+
+.strokeButton {
+  background-color: transparent;
+  color: var(--accent-12);
+  border: 1px solid currentColor;
+}
+
+.transparentButton {
+  background-color: transparent;
+  color: var(--accent-12);
+  padding: 5px;
+}
