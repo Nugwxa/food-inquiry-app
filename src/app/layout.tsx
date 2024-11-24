@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import { Roboto } from 'next/font/google'
 import { Theme as ThemeProvider } from '@radix-ui/themes'
+import Header from '@/components/Header'
 import type { Metadata } from 'next'
 
 const robotoFont = Roboto({
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body data-theme="gray" className={`${robotoFont.variable}`}>
         <ThemeProvider appearance="light" accentColor="gray">
+          <Header />
           {children}
         </ThemeProvider>
       </body>
