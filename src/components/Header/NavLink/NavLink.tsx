@@ -14,7 +14,6 @@ export default function NavLink(props: Readonly<NavLinkProps>) {
   const { href = '', children, className, ...rest } = props
 
   const pathname = usePathname()
-  console.log(pathname)
 
   const linkIsActive = pathname.startsWith(href)
   return (
