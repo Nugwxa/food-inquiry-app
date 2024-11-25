@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.paginationNavButton {
+  padding: 8px;
+  background-color: var(--accent-6);
+  color: var(--accent-10);
+}
+
+.paginationButton {
+  min-width: 20px;
+  min-height: 20px;
+  display: flex;
+  opacity: 0.6;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+
+  .pagination:disabled {
+    cursor: unset;
+  }
+}
+
+.active {
+  font-weight: 500;
+  opacity: 1;
+}
