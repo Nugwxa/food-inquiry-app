@@ -1,0 +1,10 @@
+.restaurantsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+@media (max-width: 550px) {
+  .restaurantsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,29 @@
+.restaurantName {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.imageWrapper {
+  position: relative;
+  height: 100px;
+}
+.restaurantImage {
+  object-fit: cover;
+  object-position: center;
+}
+
+.restaurantCard {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.restaurantContainerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  background-color: var(--accent-1);
+  padding: var(--space-4);
+  flex-grow: 1;
+}
